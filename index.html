@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICT Club</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.1.1/core.js"></script>
+
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .box {
+            background-color: rgb(255, 251, 182);
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 700;
+            color: hotpink;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: hotpink;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- form -->
+    <div class="box">
+        <h1>ICT Club</h1>
+
+        <!-- names -->
+        <input id="first" placeholder="First Name">
+        <input id="last" placeholder="Last Name">
+
+        <!-- check -->
+        <button py-click="check_member">Check</button>
+
+        <!-- result -->
+        <p id="result"></p>
+    </div>
+
+    <!-- connect python -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
